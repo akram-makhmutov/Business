@@ -1,38 +1,31 @@
-function Slider(container) {
-  this.container = container;
-  this.slides = Array.from(container.querySelectorAll('.slide'));
-  this.current = 0;
-  this.interval = null;
+const slider = document.querySelector('.slider');
+const prevButton = document.querySelector('.prev-button');
+const nextButton = document.querySelector('.next-button');
+const slides = Array.from(slider.querySelectorAll('img'));
+const slideCount = slides.length;
+let slideIndex = 0;
 
-  this.next = function () {
-    this.slides[this.current].classList.remove('active');
-    this.current = (this.current + 1) % this.slides.length;
-    this.slides[this.current].classList.add('active');
-    this.updateDots();
-  };
+prevButton.addEventListener('click', showPreviousSlide);
+nextButton.addEventListener('click', showNextSlide);
 
-  this.prev = function () {
-    this.slides[this.current].classList.remove('active');
-    this.current = (this.current - 1 + this.slides.length) % this.slides.length;
-    this.slides[this.current].classList.add('active');
-    this.updateDots();
-  };
-
-  this.updateDots = function () {
-  };
-
-  this.enableControls = function () {
-  };
-
-  this.enableDots = function () {
-  };
-
-  this.init = function () {
-    this.enableControls();
-    this.enableDots();
-  };
-
-  this.init();
+function showPreviousSlide() {
+  slideIndex = (slideIndex - 1 + slideCount) % slideCount;
+  updateSlider();
 }
 
-new Slider(document.querySelector('.slider-container'));
+function showNextSlide() {
+  slideIndex = (slideIndex + 1) % slideCount;
+  updateSlider();
+}
+
+function updateSlider() {
+  slides.forEach((slide, index) => {
+    if (index === slideIndex) {
+      slide.style.display = 'block';
+    } else {
+      slide.style.display = 'none';
+    }
+  });
+}
+
+updateSlider();
