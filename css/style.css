@@ -1,0 +1,61 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styles for header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Menu styles */
+.menu a {
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #333;
+  margin-right: 20px;
+}
+
+/* Logo styles */
+.logo img {
+  max-width: 100px; /* Adjust based on your design */
+}
+
+/* Header button styles */
+.header-button .button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main text styles */
+.main-text {
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+/* Sub text styles */
+.sub-text {
+  font-size: 18px;
+}
+
+/* Main button styles */
+.main-button .button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
