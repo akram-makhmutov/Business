@@ -3,8 +3,103 @@
   src: url(../fonts/Outfit-Medium.ttf);
 }
 
-.container {
-  max-width: 1920px;
-  padding: 60px 120px;
+@font-face {
+  font-family: Outfit-Regular;
+  src: url(../fonts/Outfit-Regular.ttf);
 }
 
+@font-face {
+  font-family: Outfit-SemiBold;
+  src: url(../fonts/Outfit-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Outfit-Bold;
+  src: url(../fonts/Outfit-Bold.ttf);
+}
+
+body {
+  background-color: #181818;
+}
+
+.orangeBlock {
+  background-color: #FFAA4C;
+  width: 1440px;
+  height: 38px;
+  margin-top: 0px;
+}
+
+
+.container {
+  max-width: 1920px;
+  padding: 10px 100px;
+}
+
+.headerTitle {
+  gap: 60px;
+  margin-top: 10px;
+  display: flex;
+  align-items: normal;
+  justify-content: left;
+  flex-direction: row;
+}
+
+.headerTitle span {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Outfit-Medium";
+}
+
+.secondPoint span {
+  color: #000000;
+  font-size: 16px;
+  font-family: "Outfit-Medium";
+}
+
+.mainLogo img {
+  margin-left: 100px;
+  width: 155px;
+  height: 49px;
+  align-items: center;
+  justify-content: left;
+  display: flex;
+}
+
+.mainLogo span {
+  font-size: 36px;
+  color: white;
+  font-family: "Outfit-SemiBold";
+}
+
+.button {
+  gap: 14px;
+  border-radius: 16px;
+  padding: 16px 30px;
+  font-size: 20px;
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #954CED;
+  font-family: "Outfit-SemiBold";
+  cursor: pointer;
+}
+
+.mainHeading span{
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 106%;
+  font-style: normal;
+  color: white;
+  font-family: "Outfit-Bold";
+}
+
+.mainParagraph span{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  font-style: normal;
+  color: white;
+  font-family: "Outfit-Regular";
+}
