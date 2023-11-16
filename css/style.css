@@ -19,6 +19,7 @@
 }
 
 body {
+  overflow-x: hidden;
   background-color: #181818;
 }
 
@@ -30,8 +31,6 @@ body {
 
 .container {
   max-width: 1920px;
-  padding: 0px 100px;
-  overflow: hidden;
 }
 
 .headerTitle {
@@ -65,7 +64,7 @@ body {
 
 .mainLogo {
   margin-top: 8px;
-  margin-left: 20px;
+  margin-left: 160px;
   gap: 870px;
   display: flex;
   align-items: center;
@@ -102,7 +101,7 @@ body {
 }
 
 .mainHeading {
-  gap: 30px;
+  gap: 40px;
   margin-top: 60px;
   margin-left: 50px;
   display: flex;
@@ -119,6 +118,12 @@ body {
   font-family: "Outfit-Bold";
 }
 
+.mainParagraph {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+
 .mainParagraph span {
   font-size: 20px;
   font-weight: 400;
@@ -126,4 +131,34 @@ body {
   font-style: normal;
   color: white;
   font-family: "Outfit-Regular";
+}
+
+.mainPhoto {
+  margin-right: 0px;
+  display: flex;
+  justify-content: right;
+  flex-direction: row;
+}
+
+.mainPhoto img {
+  width: 595px;
+  height: 530px;
+}
+
+.regularParagraph {
+  gap: 40px;
+  margin-top: 60px;
+  margin-left: 50px;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+
+.regularParagraph span {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: white;
+  font-family: "Outfit-SemiBold";
 }
