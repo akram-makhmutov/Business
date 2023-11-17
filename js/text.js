@@ -1,2 +1,2 @@
-const text = document.querySelector('.moving-text');
+const text = document.querySelector('.movingTextAnimation');
 text.style.animationDirection = "normal";
