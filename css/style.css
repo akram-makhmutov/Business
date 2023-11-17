@@ -24,11 +24,12 @@ body {
 
 .orangeBlock {
   background-color: #FFAA4C;
-  max-width: 100%;
+  max-width: content-box;
   height: 34px;
 }
 
 .container {
+  overflow: hidden;
   max-width: 1920px;
 }
 
@@ -69,12 +70,13 @@ body {
   align-items: center;
   justify-content: left;
   flex-direction: row;
-  cursor: pointer;
+
 }
 
 .mainLogo img {
   width: 155px;
   height: 49px;
+  cursor: pointer;
 }
 
 .button {
@@ -129,7 +131,6 @@ body {
 }
 
 .mainPhoto {
-  top: 0px;
   right: 0px;
   margin-right: 0px;
   display: flex;
@@ -188,6 +189,18 @@ body {
   padding: 76px 140px 0px 0px;
 }
 
+.matrixCards {
+  top: 930px;
+  right: 30px;
+  position: absolute;
+}
+
+.lineCards {
+  gap: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
 .advantageCard {
   gap: 10px;
   display: flex;
@@ -222,20 +235,49 @@ body {
   font-family: "Outfit-Regular";
 }
 
-.matrixCards {
-  top: 930px;
-  right: 10px;
-  position: absolute;
-}
-
-.lineCards {
-  gap: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
 .spaceBetweenCards {
   margin-top: 40px;
 }
+
+.spaceForBlocks {
+  margin-top: 80px;
+}
+
+.movingText {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.movingTextAnimation {
+  position: relative;
+  animation: slide 5s linear infinite;
+  animation-name: slide;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  color: white;
+  font-size: 128px;
+  font-weight: 700;
+  line-height: 136px;
+  letter-spacing: 0px;
+  text-align: left;
+  font-family: Outfit-Bold;
+}
+
+.movingTextAnimation span {
+  color: #954CED;
+}
+
+@keyframes slide {
+  /*0% {*/
+  /*  left: 0;*/
+  /*}*/
+  /*50% {*/
+  /*  left: 50%;*/
+  /*}*/
+  0% { left: 100%; }
+  100% { left: -100%; }
+}
+
+
