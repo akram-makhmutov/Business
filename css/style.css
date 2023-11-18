@@ -175,7 +175,7 @@ body {
   font-family: "Outfit-SemiBold";
 }
 
-.violetLine img {
+.violetLine_1 img {
   z-index: -1;
   top: 94px;
   left: 164px;
@@ -247,7 +247,7 @@ body {
   position: relative;
   white-space: nowrap;
   text-align: left;
-  animation: slide_1 20s linear infinite;
+  animation: slide_1 36s linear infinite;
   font-size: 128px;
   font-weight: 700;
   line-height: 136px;
@@ -262,7 +262,7 @@ body {
 
 @keyframes slide_1 {
   0% {
-    left: -150%;
+    left: -50%;
   }
   100% {
     left: 100%;
@@ -273,7 +273,7 @@ body {
   position: relative;
   white-space: nowrap;
   text-align: left;
-  animation: slide_2 20s linear infinite;
+  animation: slide_2 36s linear infinite;
   margin-top: 50px;
   font-size: 128px;
   font-weight: 700;
@@ -289,7 +289,7 @@ body {
 
 @keyframes slide_2 {
   0% {
-    left: 70%;
+    left: 0%;
   }
   100% {
     left: -100%;
@@ -300,7 +300,7 @@ body {
   position: relative;
   white-space: nowrap;
   text-align: left;
-  animation: slide_3 20s linear infinite;
+  animation: slide_3 36s linear infinite;
   margin-top: 50px;
   font-size: 128px;
   font-weight: 700;
@@ -316,7 +316,7 @@ body {
 
 @keyframes slide_3 {
   0% {
-    left: -120%;
+    left: -50%;
   }
   100% {
     left: 100%;
@@ -332,4 +332,84 @@ body {
 .phoneBlock img {
   width: 308px;
   height: 623px;
+}
+
+.violetBlock {
+  background-color: #954CED;
+  max-width: content-box;
+  padding: 40px 0px;
+}
+
+.allCards {
+  gap: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.statisticCard {
+  gap: 16px;
+  display: flex;
+  align-items: initial;
+  justify-content: left;
+  flex-direction: column;
+}
+
+.statisticCard p {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 68px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: white;
+  font-family: "Outfit-Bold";
+}
+
+.statisticCard span {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: white;
+  font-family: "Outfit-SemiBold";
+}
+
+.centerText {
+  z-index: 1;
+  gap: 40px;
+  margin-top: 60px;
+  margin-left: 50px;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  position: relative;
+}
+
+.centerText p {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 68px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: white;
+  font-family: "Outfit-Bold";
+}
+
+.centerText span {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 45px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: white;
+  font-family: "Outfit-Bold";
+}
+
+.violetLine_2 img {
+  z-index: -1;
+  top: 156px;
+  left: 496px;
+  position: absolute;
 }
