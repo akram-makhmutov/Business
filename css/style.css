@@ -240,14 +240,14 @@ body {
 }
 
 .spaceForBlocks {
-  margin-top: 80px;
+  margin-top: 140px;
 }
 
-.movingTextAnimation {
+.movingTextAnimation_1 {
   position: relative;
   white-space: nowrap;
   text-align: left;
-  animation: slide 10s linear infinite;
+  animation: slide_1 20s linear infinite;
   font-size: 128px;
   font-weight: 700;
   line-height: 136px;
@@ -256,11 +256,80 @@ body {
   font-family: Outfit-Bold;
 }
 
-.movingTextAnimation span {
+.movingTextAnimation_1 span {
+  color: #2FDBBC;
+}
+
+@keyframes slide_1 {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.movingTextAnimation_2 {
+  position: relative;
+  white-space: nowrap;
+  text-align: left;
+  animation: slide_2 20s linear infinite;
+  margin-top: 50px;
+  font-size: 128px;
+  font-weight: 700;
+  line-height: 136px;
+  letter-spacing: 0px;
+  color: rgba(255, 255, 255, 0.47);
+  font-family: Outfit-Bold;
+}
+
+.movingTextAnimation_2 span {
   color: #954CED;
 }
 
-@keyframes slide {
-  0% { left: -160%; }
-  100% { left: 100%; }
+@keyframes slide_2 {
+  0% {
+    left: 70%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+.movingTextAnimation_3 {
+  position: relative;
+  white-space: nowrap;
+  text-align: left;
+  animation: slide_3 20s linear infinite;
+  margin-top: 50px;
+  font-size: 128px;
+  font-weight: 700;
+  line-height: 136px;
+  letter-spacing: 0px;
+  color: rgba(255, 255, 255, 0.47);
+  font-family: Outfit-Bold;
+}
+
+.movingTextAnimation_3 span {
+  color: #FFAA4C;
+}
+
+@keyframes slide_3 {
+  0% {
+    left: -120%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.phoneBlock {
+  top: 1730px;
+  right: 580px;
+  position: absolute;
+}
+
+.phoneBlock img {
+  width: 308px;
+  height: 623px;
 }
