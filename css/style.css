@@ -262,7 +262,7 @@ body {
 
 @keyframes slide_1 {
   0% {
-    left: -50%;
+    left: -125%;
   }
   100% {
     left: 100%;
@@ -316,7 +316,7 @@ body {
 
 @keyframes slide_3 {
   0% {
-    left: -50%;
+    left: -125%;
   }
   100% {
     left: 100%;
@@ -413,3 +413,133 @@ body {
   left: 496px;
   position: absolute;
 }
+
+.spaceForCards {
+  margin-top: 20px;
+}
+
+.paddingLeftRight {
+  padding: 0px 100px;
+}
+
+.fewCards {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.blockCard_1 {
+  gap: 24px;
+  width: 630px;
+  height: 360px;
+  padding: 50px;
+  padding-left: 350px;
+  border-radius: 30px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: normal;
+  justify-content: left;
+  flex-direction: column;
+  background-image: url("../img/image_1.svg");
+  background-position: left;
+  background-size: 100% 100%;
+}
+
+.blockCard_1 img {
+  width: 318px;
+  height: 360px;
+  object-fit: scale-down;
+}
+
+.blockCard_1 p {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0px;
+  text-align: left;
+  font-family: Outfit-SemiBold;
+}
+
+.blockCard_1 span {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  font-family: Outfit-Regular;
+}
+
+.blockCard_2 {
+  gap: 20px;
+  padding: 50px;
+  width: 416px;
+  height: 360px;
+  border-radius: 30px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("../img/image_2.svg");
+  background-position: center;
+  background-size: 100% 100%;
+
+}
+
+.blockCard_2 img {
+  width: 540px;
+  height: 360px;
+  object-fit: scale-down;
+}
+
+.blockCard_3 {
+  gap: 20px;
+  padding: 50px;
+  width: 550px;
+  height: 360px;
+  border-radius: 30px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: normal;
+  justify-content: left;
+  flex-direction: column;
+  background-image: url("../img/image_3.svg");
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.blockCard_3 img {
+  width: 550px;
+  height: 360px;
+  object-fit: scale-down;
+}
+
+.blockCard_4 {
+  gap: 20px;
+  padding: 50px;
+  width: 416px;
+  height: 360px;
+  border-radius: 30px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: normal;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("../img/image_2.svg");
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.blockCard_4 img {
+  width: 540px;
+  height: 360px;
+  object-fit: scale-down;
+}
+
+
