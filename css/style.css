@@ -1,4 +1,9 @@
 @font-face {
+  font-family: Outfit-Light;
+  src: url(../fonts/Outfit-Light.ttf);
+}
+
+@font-face {
   font-family: Outfit-Medium;
   src: url(../fonts/Outfit-Medium.ttf);
 }
@@ -70,7 +75,6 @@ body {
   align-items: center;
   justify-content: left;
   flex-direction: row;
-
 }
 
 .mainLogo img {
@@ -106,7 +110,7 @@ body {
   position: relative;
 }
 
-.mainHeading span {
+.mainHeading p {
   font-size: 96px;
   font-weight: 700;
   line-height: 106%;
@@ -115,13 +119,7 @@ body {
   font-family: "Outfit-Bold";
 }
 
-.mainParagraph {
-  display: flex;
-  justify-content: left;
-  flex-direction: column;
-}
-
-.mainParagraph span {
+.mainHeading span {
   font-size: 20px;
   font-weight: 400;
   line-height: 120%;
@@ -240,7 +238,7 @@ body {
 }
 
 .spaceForBlocks {
-  margin-top: 140px;
+  margin-top: 120px;
 }
 
 .movingTextAnimation_1 {
@@ -419,7 +417,7 @@ body {
 }
 
 .paddingLeftRight {
-  padding: 0px 100px;
+  padding: 0px 60px;
 }
 
 .fewCards {
@@ -432,8 +430,6 @@ body {
 
 .blockCard_1 {
   gap: 24px;
-  width: 630px;
-  height: 360px;
   padding: 50px;
   padding-left: 350px;
   border-radius: 30px;
@@ -446,6 +442,7 @@ body {
   background-image: url("../img/image_1.svg");
   background-position: left;
   background-size: 100% 100%;
+  position: relative;
 }
 
 .blockCard_1 img {
@@ -474,24 +471,24 @@ body {
 
 .blockCard_2 {
   gap: 20px;
-  padding: 50px;
-  width: 416px;
-  height: 360px;
+  top: 3050px;
+  right: 100px;
+  padding: 40px;
   border-radius: 30px;
-  width: fit-content;
-  height: fit-content;
+  width: max-content;
+  height: complex;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   flex-direction: column;
   background-image: url("../img/image_2.svg");
   background-position: center;
   background-size: 100% 100%;
-
+  position: absolute;
 }
 
 .blockCard_2 img {
-  width: 540px;
+  width: 550px;
   height: 360px;
   object-fit: scale-down;
 }
@@ -511,6 +508,7 @@ body {
   background-image: url("../img/image_3.svg");
   background-position: center;
   background-size: 100% 100%;
+  position: relative;
 }
 
 .blockCard_3 img {
@@ -520,26 +518,222 @@ body {
 }
 
 .blockCard_4 {
-  gap: 20px;
-  padding: 50px;
-  width: 416px;
+  gap: 24px;
+  top: 3450px;
+  right: 100px;
+  width: 730px;
   height: 360px;
+  padding: 50px;
+  padding-right: 240px;
   border-radius: 30px;
   width: fit-content;
   height: fit-content;
   display: flex;
   align-items: normal;
-  justify-content: center;
+  justify-content: left;
   flex-direction: column;
-  background-image: url("../img/image_2.svg");
-  background-position: center;
+  background-image: url("../img/image_4.svg");
+  background-position: left;
   background-size: 100% 100%;
+  position: absolute;
 }
 
 .blockCard_4 img {
-  width: 540px;
+  width: 730px;
   height: 360px;
   object-fit: scale-down;
 }
 
+.spaceForWhiteBlock {
+  margin-top: 100px;
+}
+
+.whiteBlock {
+  padding: 40px 20px;
+  max-width: content-box;
+  background-color: #F5F5F5;
+}
+
+.textButton {
+  gap: 40px;
+  margin-top: 30px;
+  width: border-box;
+  height: 285px;
+  border-radius: 60px;
+  padding: 0px -40px 0px -40px;
+  border: 1px solid #CFCFCF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.textButton p {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 68px;
+  letter-spacing: 0px;
+  text-align: center;
+  font-family: Outfit-Bold;
+}
+
+.blackTitle {
+  gap: 40px;
+  margin-top: 60px;
+  margin-left: 160px;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+
+.blackTitle p {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 106%;
+  font-style: normal;
+  color: black;
+  font-family: "Outfit-Bold";
+  position: relative;
+}
+
+.blackTitle span {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  font-style: normal;
+  color: black;
+  font-family: "Outfit-Regular";
+}
+
+.blockIcons {
+  gap: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+}
+
+.blockIcons img {
+  width: 75px;
+  height: 75px;
+}
+
+.blockIcons_1 {
+  top: 4300px;
+  right: 105px;
+  position: absolute;
+}
+
+.blockIcons_2 {
+  top: 4400px;
+  right: 10px;
+  right: 10px;
+  position: absolute;
+}
+
+.sponsors {
+  gap: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.sponsors img {
+  width: fit-content;
+  height: fit-content;
+}
+
+.footerBlock {
+  padding: 40px;
+  max-width: content-box;
+  background-color: #181818;
+}
+
+.footerLogo {
+  gap: 20px;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: row;
+}
+
+.footerLogo img {
+  width: 155px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.footerTitle {
+  gap: 40px;
+  padding: 0px 116px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.footerTitle span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: white;
+  font-family: Outfit-Medium;
+  cursor: pointer;
+}
+
+.line {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line img {
+  width: 1230px;
+}
+
+.policy {
+  gap: 465px;
+  margin-top: 20px;
+  margin-left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.policy span {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #B9B9B9;
+  font-family: Outfit-Light;
+
+}
+
+.policyPages {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.policyPages span {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #B9B9B9;
+  font-family: Outfit-Light;
+  cursor: pointer;
+}
 
