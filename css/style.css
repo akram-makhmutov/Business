@@ -233,7 +233,7 @@ body {
   font-family: "Outfit-Regular";
 }
 
-.spaceBetweenCards {
+.spaceForCards {
   margin-top: 40px;
 }
 
@@ -243,9 +243,6 @@ body {
 
 .movingTextAnimation_1 {
   position: relative;
-  white-space: nowrap;
-  text-align: left;
-  animation: slide_1 36s linear infinite;
   font-size: 128px;
   font-weight: 700;
   line-height: 136px;
@@ -258,20 +255,8 @@ body {
   color: #2FDBBC;
 }
 
-@keyframes slide_1 {
-  0% {
-    left: -125%;
-  }
-  100% {
-    left: 100%;
-  }
-}
-
 .movingTextAnimation_2 {
   position: relative;
-  white-space: nowrap;
-  text-align: left;
-  animation: slide_2 36s linear infinite;
   margin-top: 50px;
   font-size: 128px;
   font-weight: 700;
@@ -285,20 +270,8 @@ body {
   color: #954CED;
 }
 
-@keyframes slide_2 {
-  0% {
-    left: 0%;
-  }
-  100% {
-    left: -100%;
-  }
-}
-
 .movingTextAnimation_3 {
   position: relative;
-  white-space: nowrap;
-  text-align: left;
-  animation: slide_3 36s linear infinite;
   margin-top: 50px;
   font-size: 128px;
   font-weight: 700;
@@ -310,15 +283,6 @@ body {
 
 .movingTextAnimation_3 span {
   color: #FFAA4C;
-}
-
-@keyframes slide_3 {
-  0% {
-    left: -125%;
-  }
-  100% {
-    left: 100%;
-  }
 }
 
 .phoneBlock {
@@ -417,38 +381,28 @@ body {
 }
 
 .paddingLeftRight {
-  padding: 0px 60px;
+  padding: 0px 80px;
 }
 
-.fewCards {
+.cardsLine_1 {
   gap: 20px;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
-  flex-direction: row;
 }
 
 .blockCard_1 {
-  gap: 24px;
-  padding: 50px;
-  padding-left: 350px;
+  gap: 20px;
+  padding: 40px 40px 40px 300px;
   border-radius: 30px;
-  width: fit-content;
-  height: fit-content;
   display: flex;
   align-items: normal;
-  justify-content: left;
+  justify-content: right;
   flex-direction: column;
   background-image: url("../img/image_1.svg");
-  background-position: left;
-  background-size: 100% 100%;
-  position: relative;
-}
-
-.blockCard_1 img {
-  width: 318px;
-  height: 360px;
-  object-fit: scale-down;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .blockCard_1 p {
@@ -470,78 +424,50 @@ body {
 }
 
 .blockCard_2 {
-  gap: 20px;
-  top: 3050px;
-  right: 100px;
-  padding: 40px;
+  padding: 40px 100px 40px 40px;
   border-radius: 30px;
-  width: max-content;
-  height: complex;
   display: flex;
-  align-items: center;
-  justify-content: left;
   flex-direction: column;
   background-image: url("../img/image_2.svg");
   background-position: center;
-  background-size: 100% 100%;
-  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  gap: 20px;
+  align-items: center;
+  justify-content: left;
 }
 
-.blockCard_2 img {
-  width: 550px;
-  height: 360px;
-  object-fit: scale-down;
+.spaceForNiceCards {
+  margin-top: 20px;
+}
+
+.cardsLine_2 {
+  gap: 20px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
 }
 
 .blockCard_3 {
-  gap: 20px;
-  padding: 50px;
-  width: 550px;
-  height: 360px;
+  padding: 40px 60px 40px 40px;
   border-radius: 30px;
-  width: fit-content;
-  height: fit-content;
   display: flex;
-  align-items: normal;
-  justify-content: left;
   flex-direction: column;
   background-image: url("../img/image_3.svg");
   background-position: center;
-  background-size: 100% 100%;
-  position: relative;
-}
-
-.blockCard_3 img {
-  width: 550px;
-  height: 360px;
-  object-fit: scale-down;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .blockCard_4 {
-  gap: 24px;
-  top: 3450px;
-  right: 100px;
-  width: 730px;
-  height: 360px;
-  padding: 50px;
-  padding-right: 240px;
+  padding: 40px 260px 40px 40px;
   border-radius: 30px;
-  width: fit-content;
-  height: fit-content;
   display: flex;
-  align-items: normal;
-  justify-content: left;
   flex-direction: column;
   background-image: url("../img/image_4.svg");
   background-position: left;
-  background-size: 100% 100%;
-  position: absolute;
-}
-
-.blockCard_4 img {
-  width: 730px;
-  height: 360px;
-  object-fit: scale-down;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .spaceForWhiteBlock {
