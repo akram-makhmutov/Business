@@ -83,20 +83,62 @@ body {
   cursor: pointer;
 }
 
-.button {
+.button_header {
   gap: 14px;
-  width: 182px;
+  width: 190px;
   height: 56px;
   border-radius: 16px;
   padding: 16px 30px;
   font-size: 20px;
-  border: none;
+  border: 2px solid #954CED;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: #954CED;
+  background-color: transparent;
   font-family: "Outfit-SemiBold";
+  cursor: pointer;
+}
+
+.button_header:hover {
+  background-color: #954CED33;
+}
+
+.modal {
+  display: none; /* По умолчанию скрыто */
+  position: fixed;
+  z-index: 1000; /* Даем модальному окну высокий z-index, чтобы оно оказалось поверх остального контента */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Затемняем фон */
+}
+
+/* Контент модального окна */
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Кнопка закрытия */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -501,6 +543,36 @@ body {
   letter-spacing: 0px;
   text-align: center;
   font-family: Outfit-Bold;
+}
+
+
+.button {
+  gap: 14px;
+  width: 190px;
+  height: 56px;
+  border-radius: 16px;
+  padding: 16px 30px;
+  font-size: 20px;
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #954CED;
+  font-family: "Outfit-SemiBold";
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #181818;
+}
+
+.button:focus{
+  border: 4px solid #BA8BF3;
+}
+
+.button:active {
+  background-color: #7B31D4;
 }
 
 .blackTitle {
