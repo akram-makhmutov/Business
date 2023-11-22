@@ -209,8 +209,7 @@ body {
 }
 
 .modal-content h3 {
-  margin-top: 30px;
-  margin-bottom: 6px;
+  margin: 8px 0px 8px 0px;
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
@@ -238,12 +237,23 @@ body {
 .error-message {
   display: none;
   margin-top: -10px;
-  color: #EC1211;
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0px;
   text-align: left;
+  color: #EC1211;
+  font-family: Outfit-Regular;
+}
+
+.warning-message {
+  display: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #EC1211;
   font-family: Outfit-Regular;
 }
 
