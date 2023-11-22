@@ -188,7 +188,7 @@ body {
 }
 
 .modal-content h1 {
-  margin: 4px 0px 12px 0px;
+  margin: 4px 0px 14px 0px;
   padding: 10px 0 10px 14px;
   border-radius: 14px;
   border: 1px solid #F1F1F1;
@@ -200,6 +200,7 @@ body {
   align-items: center;
   color: #A7A7A7;
   font-family: Outfit-Regular;
+  cursor: text;
 }
 
 .modal-content h2 {
@@ -208,7 +209,8 @@ body {
 }
 
 .modal-content h3 {
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 6px;
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
@@ -233,17 +235,20 @@ body {
   margin-right: 6px;
 }
 
-.modal-content input:invalid {
-  border-color: red;
-}
-
-.modal-content input:invalid + .error-message {
-  display: block;
-  color: red;
-}
-
 .error-message {
   display: none;
+  margin-top: -10px;
+  color: #EC1211;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  font-family: Outfit-Regular;
+}
+
+h1:invalid {
+  border: 1px solid #EC1211;
 }
 
 .close {
