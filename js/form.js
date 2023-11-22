@@ -1,14 +1,25 @@
-// Получаем элементы нашей кнопки и модального окна
-var openButton = document.querySelector('.button_header');
-var modal = document.getElementById('modal');
-var closeButton = document.querySelector('.close');
+let openButtons = document.querySelectorAll('.button, .button_header');
+let modal = document.querySelector('.modal');
+let closeButton = document.querySelector('.close');
 
-// Добавляем обработчик события на клик по кнопке
-openButton.addEventListener('click', function() {
-  modal.style.display = "block";
+openButtons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    modal.style.display = "block";
+  });
 });
 
-// Добавляем обработчик события на клик по кнопке закрытия модального окна
 closeButton.addEventListener('click', function() {
   modal.style.display = "none";
+});
+
+window.addEventListener('click', function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+});
+
+window.addEventListener('keydown', function(event) {
+  if (event.key === "Escape") {
+    modal.style.display = "none";
+  }
 });

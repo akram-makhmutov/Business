@@ -104,41 +104,165 @@ body {
   background-color: #954CED33;
 }
 
+.button_header:focus {
+  border: 4px solid #BA8BF3;
+}
+
+.button_header:active {
+  background-color: #7B31D4;
+}
+
+.button_header:disabled {
+  margin-top: 20px;
+  color: #FFFFFF;
+  background-color: #B9B9B9;
+  border: none;
+  cursor: pointer;
+}
+
+.button {
+  gap: 14px;
+  width: 190px;
+  height: 56px;
+  border-radius: 16px;
+  padding: 16px 30px;
+  font-size: 20px;
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #954CED;
+  font-family: "Outfit-SemiBold";
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #181818;
+}
+
+.button:focus {
+  border: 4px solid #BA8BF3;
+}
+
+.button:active {
+  background-color: #7B31D4;
+}
+
+.button:disabled {
+  background-color: #FFFFFF;
+}
+
 .modal {
-  display: none; /* По умолчанию скрыто */
+  display: none;
   position: fixed;
-  z-index: 1000; /* Даем модальному окну высокий z-index, чтобы оно оказалось поверх остального контента */
+  z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5); /* Затемняем фон */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Контент модального окна */
 .modal-content {
-  position: absolute;
   top: 50%;
   left: 50%;
+  width: 418px;
+  padding: 40px;
+  border-radius: 20px;
   transform: translate(-50%, -50%);
   background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
+  position: absolute;
 }
 
-/* Кнопка закрытия */
+.modal-content p {
+  margin: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: Outfit-Medium;
+  position: relative;
+}
+
+.modal-content h1 {
+  margin: 4px 0px 12px 0px;
+  padding: 10px 0 10px 14px;
+  border-radius: 14px;
+  border: 1px solid #F1F1F1;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  display: flex;
+  align-items: center;
+  color: #A7A7A7;
+  font-family: Outfit-Regular;
+}
+
+.modal-content h2 {
+  padding: 2px;
+  color: #FF6C2D;
+}
+
+.modal-content h3 {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  font-family: Outfit-Light;
+}
+
+.modal-content p, h2 {
+  margin: 1px;
+  display: inline;
+}
+
+.modal-content ins {
+  color: #954CED;
+  cursor: pointer;
+}
+
+.modal-content img {
+  width: 22px;
+  height: 16px;
+  margin-right: 6px;
+}
+
+.modal-content input:invalid {
+  border-color: red;
+}
+
+.modal-content input:invalid + .error-message {
+  display: block;
+  color: red;
+}
+
+.error-message {
+  display: none;
+}
+
 .close {
-  color: #aaa;
-  float: right;
+  top: 18px;
+  right: 18px;
+  gap: 8px;
+  width: 20px;
+  height: 20px;
   font-size: 28px;
   font-weight: bold;
+  float: right;
+  color: #B9B9B9;
+  padding: 3px 3px 3px 3px;
+  position: absolute;
 }
 
-.close:hover,
-.close:focus {
-  color: black;
+.close:hover, .close:focus {
   text-decoration: none;
+  color: black;
   cursor: pointer;
 }
 
@@ -545,36 +669,6 @@ body {
   font-family: Outfit-Bold;
 }
 
-
-.button {
-  gap: 14px;
-  width: 190px;
-  height: 56px;
-  border-radius: 16px;
-  padding: 16px 30px;
-  font-size: 20px;
-  border: none;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background-color: #954CED;
-  font-family: "Outfit-SemiBold";
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #181818;
-}
-
-.button:focus{
-  border: 4px solid #BA8BF3;
-}
-
-.button:active {
-  background-color: #7B31D4;
-}
-
 .blackTitle {
   gap: 40px;
   margin-top: 60px;
@@ -618,13 +712,13 @@ body {
 }
 
 .blockIcons_1 {
-  top: 4300px;
+  top: 4400px;
   right: 105px;
   position: absolute;
 }
 
 .blockIcons_2 {
-  top: 4400px;
+  top: 4500px;
   right: 10px;
   right: 10px;
   position: absolute;
